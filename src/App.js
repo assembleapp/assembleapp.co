@@ -19,16 +19,23 @@ const Layout = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
-  margin: 1rem;
+  padding: 1rem;
+  background-color:  #f8b0c1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `
 
 const Title = styled.h1`
   margin: 0;
+  color: #0b8d9c;
 `
 
 const Caption = styled.span`
   grid-column: 2;
-  color: #888888;
+  color: #fbf826;
 `
 
 export default App;
