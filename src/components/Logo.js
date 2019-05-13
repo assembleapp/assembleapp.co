@@ -53,7 +53,7 @@ class Logo extends React.Component {
   }
 
   continuous = true
-  repeatDelay = 4000
+  repeatDelay = 1000
 
   componentDidMount() {
     if (this.continuous) {
