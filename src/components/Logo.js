@@ -1,10 +1,7 @@
 import styled from "styled-components"
-
 import React from "react";
-import PropTypes from "prop-types"
 
 // Eighties colors
-const border_color = "#2d2d2d"
 const face_colors = [
   "#6699cc", // Blue
   "#cc99cc", // Purple
@@ -66,8 +63,6 @@ class Logo extends React.Component {
         let spinDirection = Math.random() < 0.5 ? -1 : 1;
 
         if (this.repeatDelay <= deltaTime) {
-          let obj = {};
-
           let newState = this.state;
           newState[axis] = this.state[axis] + 90 * spinAmount * spinDirection;
 

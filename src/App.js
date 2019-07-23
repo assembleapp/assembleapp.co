@@ -13,27 +13,27 @@ function App() {
       </div>
 
       <Words>
-        {// TODO Time
-        }
+        <Time>2019.07.16 pacific 23:59</Time>
+        <Post>Options for Suzuki motorcycles</Post>
 
         <Time>2019.07.16 pacific 18:32</Time>
-        <Paragraph>
+        <Post>
           1/2 cup water traded for 1 Chinese RMB
 
           at Mission Hunan Restaurant in San Francisco。
-        </Paragraph>
+        </Post>
       </Words>
 
       <Words>
-        <Paragraph>
+        <Post>
           This post serves to deprecate the conception
           of "networked technologies", circa 2019.05.19,
           as grounded with respect to sound economics。
-        </Paragraph>
+        </Post>
 
-        <Paragraph>
+        <Post>
           No mitigation strategy yet exists。
-        </Paragraph>
+        </Post>
       </Words>
     </Layout>
   );
@@ -67,7 +67,7 @@ const Words = styled.div`
   grid-column: 2;
 `
 
-const Paragraph = styled.p`
+const Post = styled.p`
   white-space: pre-wrap;
 `
 
