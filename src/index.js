@@ -4,23 +4,6 @@ import React from "react"
 import ReactDOM from "react-dom"
 import './index.css';
 
-import {
-  // activate,
-  // list,
-} from "./helpers"
-
-import {
-  // Checkbox,
-  // Layout,
-  // Text,
-} from "./elements"
-
-import {
-  // Add,
-  // Remove,
-} from "./actions"
-
-
   /*
 // import { types } from "mobx-state-tree"
 

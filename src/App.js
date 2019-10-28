@@ -13,8 +13,8 @@ function App() {
       </div>
 
       <Words>
-        <Time>2019.07.16 pacific 23:59</Time>
-        <Post>Options for Suzuki motorcycles</Post>
+        <Time>2019.10.28 pacific 08:08</Time>
+        <Post>Delay; 15 minutes. Post at 08:15 pacific.</Post>
 
         <Time>2019.07.16 pacific 18:32</Time>
         <Post>
