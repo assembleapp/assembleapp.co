@@ -13,7 +13,10 @@ function App() {
 
       <Words>
         <Time>2019.10.28 pacific 08:08</Time>
-        <Post>System delay; 30 minutes. Post at 08:30 pacific.</Post>
+        <Title>Federal Register Headlines.</Title>
+        <Post>
+          System delay; 30 minutes. Post moved from 08:00 to 08:30 pacific.
+        </Post>
       </Words>
 
       <Words>
