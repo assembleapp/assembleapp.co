@@ -6,7 +6,6 @@ function App() {
   return (
     <Layout>
       <Logo />
-
       <div>
         <Title>Assemble。</Title>
         <Caption>Symbols to keep people moving。</Caption>
@@ -14,7 +13,7 @@ function App() {
 
       <Words>
         <Time>2019.10.28 pacific 08:08</Time>
-        <Post>Delay; 15 minutes. Post at 08:15 pacific.</Post>
+        <Post>System delay; 30 minutes. Post at 08:30 pacific.</Post>
       </Words>
 
       <Words>
