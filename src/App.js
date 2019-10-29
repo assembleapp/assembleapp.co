@@ -12,14 +12,6 @@ function App() {
       </div>
 
       <Words>
-        <Time>2019.10.28 pacific 08:08</Time>
-        <Title>Federal Register Headlines.</Title>
-        <Post>
-          System delay; 30 minutes. Post moved from 08:00 to 08:30 pacific.
-        </Post>
-      </Words>
-
-      <Words>
         <Time>2019.07.16 pacific 18:32</Time>
         <Post>
           1/2 cup water traded for 1 Chinese RMB
