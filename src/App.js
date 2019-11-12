@@ -12,6 +12,13 @@ function App() {
       </div>
 
       <Words>
+        <Time>2019.11.11 pacific 23:56</Time>
+        <Post>
+          Lines for each group of words。
+        </Post>
+      </Words>
+
+      <Words>
         <Time>2019.11.11 pacific 23:29</Time>
         <Post>
           Code
@@ -52,9 +59,10 @@ const Layout = styled.div`
 font-size: 32px;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-row-gap: 4rem;
   grid-template-rows: auto 1fr;
   padding: 1rem;
-  background-color:  #98d58d;
+  background-color:  #eec691;
   position: absolute;
   top: 0;
   left: 0;
@@ -74,6 +82,8 @@ const Caption = styled.span`
 
 const Words = styled.div`
   grid-column: 2;
+  border-left: 8px solid rgba(0, 0, 0, 0.8);
+  padding-left: 1rem;
 `
 
 const Post = styled.p`
