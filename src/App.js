@@ -12,10 +12,23 @@ function App() {
       </div>
 
       <Words>
+        <Time>2019.11.11 pacific 23:29</Time>
+        <Post>
+          Code
+
+          <Code value={`
+          way
+          oh
+          `} />
+
+          Code shows properly。
+        </Post>
+      </Words>
+
+      <Words>
         <Time>2019.07.16 pacific 18:32</Time>
         <Post>
           1/2 cup water traded for 1 Chinese RMB
-
           at Mission Hunan Restaurant in San Francisco。
         </Post>
       </Words>
@@ -41,7 +54,7 @@ font-size: 32px;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   padding: 1rem;
-  background-color:  #8d9bd5;
+  background-color:  #98d58d;
   position: absolute;
   top: 0;
   left: 0;
@@ -68,6 +81,16 @@ const Post = styled.p`
 `
 
 const Time = styled.span`
+`
+
+const Code = ({ value }) => (
+  <Pre>
+    {value}
+  </Pre>
+)
+
+const Pre = styled.pre`
+background-color: rgba(0, 0, 0, 0.2);
 `
 
 export default App;
