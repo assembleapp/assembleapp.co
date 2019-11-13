@@ -4,12 +4,32 @@ import Logo from "./components/Logo.js"
 
 function App() {
   return (
-    <Layout>
+    <Lay>
       <Logo />
       <div>
         <Title>Assemble。</Title>
         <Caption>Symbols to keep people moving。</Caption>
       </div>
+
+      <Color slide={["#eeb580", "#eec691", "#98d58d"]} />
+
+      <Words>
+        <Time>2019.11.12 pacific 15:41</Time>
+        <Post>
+          Hold.
+          <Schedule aim={`
+          lay color slide
+          `} />
+
+          Colors used:
+          <Code value={`
+          #eeb580;
+          #eec691;
+          #98d58d;
+          `} />
+          and more.
+        </Post>
+      </Words>
 
       <Words>
         <Time>2019.11.11 pacific 23:56</Time>
@@ -51,23 +71,23 @@ function App() {
           No mitigation strategy yet exists。
         </Post>
       </Words>
-    </Layout>
+    </Lay>
   );
 }
 
-const Layout = styled.div`
-font-size: 32px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-row-gap: 4rem;
-  grid-template-rows: auto 1fr;
-  padding: 1rem;
-  background-color:  #eec691;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+const Lay = styled.div`
+  background-color:  #eeb580;
   bottom: 0;
+  display: grid;
+  font-size: 32px;
+  grid-row-gap: 4rem;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 `
 
 const Title = styled.h1`
@@ -102,5 +122,28 @@ const Code = ({ value }) => (
 const Pre = styled.pre`
 background-color: rgba(0, 0, 0, 0.2);
 `
+
+const Color = ({ slide }) => (
+  <Slide>
+    {slide.map(shade => <Swach shade={shade} />)}
+  </Slide>
+)
+
+const Slide = styled.div`
+display: flex;
+flex-direction: row;
+`
+
+const Swach = styled.div`
+height: 2rem;
+width: 2rem;
+bacground-color: #777888;
+`
+
+const Schedule = ({ aim }) => (
+  <div>schedule: { slow(aim) }</div>
+)
+
+const slow = (words) => words
 
 export default App;
