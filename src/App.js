@@ -11,23 +11,11 @@ function App() {
         <Caption>Symbols to keep people moving。</Caption>
       </div>
 
-      <Color slide={["#eeb580", "#eec691", "#98d58d"]} />
-
       <Words>
-        <Time>2019.11.12 pacific 15:41</Time>
+        <Time>2019.11.11 pacific 23:56</Time>
         <Post>
-          Hold.
-          <Schedule aim={`
-          lay color slide
-          `} />
-
-          Colors used:
-          <Code value={`
-          #eeb580;
-          #eec691;
-          #98d58d;
-          `} />
-          and more.
+          Shrink default font size, and lighten timestamps。
+          Abandon color strategy。
         </Post>
       </Words>
 
@@ -61,9 +49,10 @@ function App() {
       </Words>
 
       <Words>
+          <Time>2019.05.19</Time>
         <Post>
           This post serves to deprecate the conception
-          of "networked technologies", circa 2019.05.19,
+          of "networked technologies",
           as grounded with respect to sound economics。
         </Post>
 
@@ -101,6 +90,7 @@ const Caption = styled.span`
 `
 
 const Words = styled.div`
+  font-size: 12px;
   grid-column: 2;
   border-left: 8px solid rgba(0, 0, 0, 0.8);
   padding-left: 1rem;
@@ -111,6 +101,7 @@ const Post = styled.p`
 `
 
 const Time = styled.span`
+  color: #444488;
 `
 
 const Code = ({ value }) => (
@@ -122,28 +113,5 @@ const Code = ({ value }) => (
 const Pre = styled.pre`
 background-color: rgba(0, 0, 0, 0.2);
 `
-
-const Color = ({ slide }) => (
-  <Slide>
-    {slide.map(shade => <Swach shade={shade} />)}
-  </Slide>
-)
-
-const Slide = styled.div`
-display: flex;
-flex-direction: row;
-`
-
-const Swach = styled.div`
-height: 2rem;
-width: 2rem;
-bacground-color: #777888;
-`
-
-const Schedule = ({ aim }) => (
-  <div>schedule: { slow(aim) }</div>
-)
-
-const slow = (words) => words
 
 export default App;
